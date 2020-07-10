@@ -2,7 +2,7 @@
  * member.js
  */
 
-var contextPath = "/herbmall";
+var contextPath = "/herb";
 
 $(function(){
 	$("#email2").change(function(){
@@ -15,11 +15,11 @@ $(function(){
 		}
 	});
 	$('#btnZipcode').click(function(){
-		window.open(contextPath + "/zipcode/zipcode.jsp?currentPage=" + "1", "zip", "height = 500, width = 600, resizable = yes, scrollbar= yes");
+		window.open(contextPath + "/zipcode/zipcode.do?currentPage=" + "1", "zip", "height = 500, width = 600, resizable = yes, scrollbar= yes");
 	});
 	$('#btnChkId').click(function(){
 		var userid = $('#userid').val();
-		window.open(contextPath + "/member/checkUserid.jsp?userid=" + userid, "chk", "height = 300, width = 450, resizable = yes, scrollbar= yes")
+		window.open(contextPath + "/member/checkUserid.do?userid=" + userid, "chk", "height = 300, width = 450, resizable = yes, scrollbar= yes")
 	});
 
 
